@@ -1,0 +1,22 @@
+name: Caitlyn luvs my hard cock inside her wet Vagina 
+
+on:
+  push:
+    branches: [ "Caitlyns-Vagina" ]
+  pull_request:
+    branches: [ "Caitlyns-Vagina" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: shards install
+    - name: Run tests
+      run: crystal spec
